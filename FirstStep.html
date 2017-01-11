@@ -163,11 +163,9 @@
     <section>  
       <div id="contact" class="container">    
       <div class="breadcrumbs">
-              <a href="#">Car and finance</a>
-              <a class="active" href="#">Personal Verification</a>
-              <a href="#">Finance Calcs and Proposal</a>
-              <a href="#">Customer Choose Finance</a>
-              <a href="#">Payment</a>
+              <a href="#" >Car Information</a>
+              <a  href="#">Vehicle Condition</a>
+              <a href="#">Contact Details</a>
             </div>    
         <div class="row">
           <div class="col-lg-12">
@@ -414,6 +412,20 @@
     <script src="js/front.js"></script><!-- substitute:livereload -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
+    <script type="text/javascript">
+    //file:///Users/gideoncasasjr/Desktop/Second%20Template/sell-a-car/sell-a-car.htm
+      var breadcrumbs = $('.breadcrumbs a');
+          var breadTab = function(){
+            var anchor =  $(this);
+            var anchorEvent = function(){  
+              var activeClass = $('.breadcrumbs .active'); 
+                  activeClass.removeClass('active');
+                  anchor.addClass("active");
+            }
+                  anchor.click(anchorEvent);
+          }
+      breadcrumbs.each(breadTab);     
+    </script>
    
   </body>
 </html>
